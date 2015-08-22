@@ -90,5 +90,5 @@
 
 ### Remove rake gem from RVM global gemset
 
-   $ rvm use @global && gem uninstall rake -v 0.9.0  
-   $ rvm use @ && gem uninstall rake -v 0.9.0  
+    $ rvm use @global && gem uninstall rake -v 0.9.0  
+    $ rvm use @ && gem uninstall rake -v 0.9.0  
