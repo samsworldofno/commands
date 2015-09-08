@@ -24,6 +24,10 @@
 
     $ /usr/sbin/system_profiler SPHardwareDataType | grep Memory
 
+### View a sitemap's contents
+
+    $ curl -s https://shutl.com/sitemap.xml.gz | gunzip | xmllint --format -
+
 ## Git
 
 ### Default push current branch to origin
