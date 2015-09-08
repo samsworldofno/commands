@@ -28,6 +28,10 @@
 
     $ curl -s https://shutl.com/sitemap.xml.gz | gunzip | xmllint --format -
 
+### Extract sitemap from robots.txt and view contents
+
+    $ curl -s https://shutl.com/robots.txt | sed -n 's/Sitemap: \(.*\).*/\1/p' | xargs -n1 curl -s | gunzip | xmllint --format -
+
 ## Git
 
 ### Default push current branch to origin
