@@ -81,6 +81,20 @@
 ### Grant all privileges to anonymous user
 
     GRANT ALL ON *.* TO ""@"localhost"
+    
+    
+## Docker
+
+### Delete old docker containers
+
+Anything created before today:
+
+    docker ps -a | grep 'days ago' | awk '{print $1}' | xargs docker rm 
+
+Anything created more than a week ago:
+
+    docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm 
+
 
 ## PostgreSQL
 
