@@ -9,6 +9,10 @@
 ### Add user to group
 
     $ usermod -G [GROUP_NAME] username
+    
+### Batch rename a load of files
+
+    $ rename 's/\.jpeg/\.jpg/' *
 
 ## OSX
 
