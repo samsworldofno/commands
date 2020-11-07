@@ -84,7 +84,8 @@
 
 ### Grant all privileges to anonymous user
 
-    GRANT ALL ON *.* TO ""@"localhost"
+    CREATE USER ""@"localhost";
+    GRANT ALL ON *.* TO ""@"localhost";
     
     
 ## Docker
