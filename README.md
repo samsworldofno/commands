@@ -14,7 +14,7 @@
 
     $ rename 's/\.jpeg/\.jpg/' *
 
-## OSX
+## OSX / macOS
 
 ### Set time to UTC
 
@@ -35,6 +35,15 @@
 ### Extract sitemap from robots.txt and view contents
 
     $ curl -s https://shutl.com/robots.txt | sed -n 's/Sitemap: \(.*\).*/\1/p' | xargs -n1 curl -s | gunzip | xmllint --format -
+
+### Add SSH key to keychain
+
+    $ ssh-add -k [path-to-keychain]
+    
+... remembering to have the ssh config specifying the [use of keychain](https://unix.stackexchange.com/questions/140075/ssh-add-is-not-persistent-between-reboots)
+
+    Host *
+      UseKeychain yes
 
 ## Git
 
